@@ -1,0 +1,796 @@
+/**
+ * Frontline Business Solutions, Inc.
+ * Author : FBS Team
+ * ===================================================================
+ * Table of Contents
+ *
+ * 1.0 - Resets
+ * 2.0 - Repeatable Patterns
+ * 3.0 - Structure / Grid / Column
+ * 4.0 - Header
+ * 5.0 - Main Content
+ * 6.0 - Footer
+ * 7.0 - Clearing
+ * 8.0 - Mobile CSS / Media Queries
+ * 9.0 - Font
+ */
+/* =================================================================== 
+ * 1.0 :: Resets
+ * ===================================================================
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  border: 0;
+  font-family: inherit;
+  font-size: 100%;
+  font-style: inherit;
+  font-weight: inherit;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+body {
+  line-height: 1;
+  color: #2b2b2b;
+  font: 14px/24px 'texgyreadventor-regular-webfont', Helvetica, sans-serif;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  scroll-behavior: smooth;
+}
+
+h1,
+h2 {
+  font-family: 'texgyreadventor-bold-webfont';
+  font-size: 42px;
+  line-height: 70px;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section,
+time {
+  display: block;
+}
+/* =================================================================== 
+    * 2.0 :: Repeatable Patterns
+    * ===================================================================
+    */
+h1 {
+  font-size: 60px;
+  color: black;
+}
+
+.regular {
+  font-family: 'Roboto';
+  font-weight: 400;
+}
+
+.thin {
+  font-family: 'Roboto';
+  font-weight: 100;
+}
+
+.my-10 {
+  margin: 10px 0;
+}
+
+.text-yellow {
+  color: #eea813;
+}
+
+.btn-donate {
+  background-color: #eea813;
+  color: #fff;
+  display: inline;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.87rem;
+  letter-spacing: 0.15em;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+/* ===================================================================
+    * 3.0 :: Structure / Grid/ Column
+    * ===================================================================
+    */
+
+/* Uncomment and set these variables to customize the grid. */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 80%;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+}
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
+  float: left;
+}
+.col-xs-12 {
+  width: 100%;
+}
+.col-xs-11 {
+  width: 91.66666667%;
+}
+.col-xs-10 {
+  width: 83.33333333%;
+}
+.col-xs-9 {
+  width: 75%;
+}
+.col-xs-8 {
+  width: 66.66666667%;
+}
+.col-xs-7 {
+  width: 58.33333333%;
+}
+.col-xs-6 {
+  width: 50%;
+}
+.col-xs-5 {
+  width: 41.66666667%;
+}
+.col-xs-4 {
+  width: 33.33333333%;
+}
+.col-xs-3 {
+  width: 25%;
+}
+.col-xs-2 {
+  width: 16.66666667%;
+}
+.col-xs-1 {
+  width: 8.33333333%;
+}
+@media (min-width: 768px) {
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
+    float: left;
+  }
+  .col-sm-12 {
+    width: 100%;
+  }
+  .col-sm-11 {
+    width: 91.66666667%;
+  }
+  .col-sm-10 {
+    width: 83.33333333%;
+  }
+  .col-sm-9 {
+    width: 75%;
+  }
+  .col-sm-8 {
+    width: 66.66666667%;
+  }
+  .col-sm-7 {
+    width: 58.33333333%;
+  }
+  .col-sm-6 {
+    width: 50%;
+  }
+  .col-sm-5 {
+    width: 41.66666667%;
+  }
+  .col-sm-4 {
+    width: 33.33333333%;
+  }
+  .col-sm-3 {
+    width: 25%;
+  }
+  .col-sm-2 {
+    width: 16.66666667%;
+  }
+  .col-sm-1 {
+    width: 8.33333333%;
+  }
+}
+@media (min-width: 992px) {
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
+    float: left;
+  }
+  .col-md-12 {
+    width: 100%;
+  }
+  .col-md-11 {
+    width: 91.66666667%;
+  }
+  .col-md-10 {
+    width: 83.33333333%;
+  }
+  .col-md-9 {
+    width: 75%;
+  }
+  .col-md-8 {
+    width: 66.66666667%;
+  }
+  .col-md-7 {
+    width: 58.33333333%;
+  }
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-5 {
+    width: 41.66666667%;
+  }
+  .col-md-4 {
+    width: 33.33333333%;
+  }
+  .col-md-3 {
+    width: 25%;
+  }
+  .col-md-2 {
+    width: 16.66666667%;
+  }
+  .col-md-1 {
+    width: 8.33333333%;
+  }
+}
+@media (min-width: 1200px) {
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    float: left;
+  }
+  .col-lg-12 {
+    width: 100%;
+  }
+  .col-lg-11 {
+    width: 91.66666667%;
+  }
+  .col-lg-10 {
+    width: 83.33333333%;
+  }
+  .col-lg-9 {
+    width: 75%;
+  }
+  .col-lg-8 {
+    width: 66.66666667%;
+  }
+  .col-lg-7 {
+    width: 58.33333333%;
+  }
+  .col-lg-6 {
+    width: 50%;
+  }
+  .col-lg-5 {
+    width: 41.66666667%;
+  }
+  .col-lg-4 {
+    width: 33.33333333%;
+  }
+  .col-lg-3 {
+    width: 25%;
+  }
+  .col-lg-2 {
+    width: 16.66666667%;
+  }
+  .col-lg-1 {
+    width: 8.33333333%;
+  }
+}
+.clearfix:before,
+.clearfix:after,
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after {
+  content: ' ';
+  display: table;
+}
+.clearfix:after,
+.container:after,
+.container-fluid:after,
+.row:after {
+  clear: both;
+}
+/* =================================================================== 
+    * 4.0 :: Header
+    * ===================================================================
+    */
+
+header {
+  /* border: 1px solid red; */
+  height: 10vh;
+  background-color: #f1f1f1;
+}
+
+header .logo {
+  width: 250px;
+  float: left;
+  padding: 5px 0;
+}
+
+header nav {
+  float: right;
+}
+
+header nav ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  list-style: none;
+  position: relative;
+}
+
+header nav ul li a {
+  height: 10vh;
+  line-height: 10vh;
+  font-size: 0.87rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.15em;
+  display: inline-block;
+  padding: 0 16px;
+  color: #000;
+}
+
+.active {
+  border-bottom: 4px solid #eea813;
+}
+
+/* =================================================================== 
+    * 5.0 :: Main Content
+    * ===================================================================
+    */
+
+/* Banner Section */
+
+#banner {
+  position: relative;
+  height: 90vh;
+}
+
+#banner h1 {
+  text-align: center;
+  margin: 60px 0;
+}
+
+.banner-wrapper {
+  border: 1px solid red;
+}
+
+.church-planting {
+  background-image: url('/assets/img/bg2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.compassion {
+  background-image: url('/assets/img/main-banner.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.education {
+  background-image: url('/assets/img/Frontline-Wall-Painting-for-Nutrition-Month-9.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-enterprise {
+  background-image: url('/assets/img/slider-BIZ-1600x370.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hub {
+  width: 100%;
+  /* border: 1px solid red; */
+  text-align: center;
+  background-color: #ddd;
+  color: #fff;
+}
+
+.hub h3 {
+  padding: 30px 0;
+}
+
+.hub p {
+  margin: 30px 0;
+  text-align: center;
+  padding: 0px 30px;
+}
+
+.hub a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-hub {
+  padding: 20px 0px;
+  background-color: #000;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+/* End Banner Section  */
+
+/* Newsletter Section */
+
+#newsletter {
+  background-image: url('/assets/img/slide-PFM-1600x370.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.newsletter-wrapper {
+  margin: 80px 0;
+  text-align: center;
+}
+
+.newsletter-wrapper p {
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 26px;
+  color: #fff;
+}
+
+.newsletter-wrapper form {
+  margin-top: 20px;
+}
+
+.newsletter-wrapper label {
+  color: #fff;
+  display: block;
+}
+
+.newsletter-wrapper form .email-wrapper {
+  width: 300px;
+  text-align: left;
+  margin: 0 auto;
+  display: inline-block;
+}
+
+.newsletter-wrapper form .email-wrapper input[type='text'] {
+  width: 100%;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: inherit;
+}
+
+.newsletter-wrapper form input[type='submit'] {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #eea813;
+  font-size: inherit;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  margin-left: 9px;
+}
+
+/* End Newsletter Section */
+
+/* ===================================================================
+    * 6.0 :: Footer
+    * ===================================================================
+    */
+
+footer {
+  padding: 40px 0;
+  background-color: #131313;
+  color: #fff;
+}
+
+footer h4 {
+  color: #eea813;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+footer ul li {
+  list-style-type: none;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-quicklinks {
+  text-align: center;
+}
+
+.footer-donate {
+  text-align: center;
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social ul li {
+  display: inline-block;
+}
+
+.footer-social ul li a i {
+  font-size: 28px;
+  vertical-align: middle;
+  margin: 5px 10px;
+}
+
+.footer-wrapper {
+  margin-bottom: 40px;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* ===================================================================
+    * 7.0 :: Clearing
+    * ===================================================================
+    */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.clearfix:after,
+.inside:after,
+li:after,
+form:after,
+article:after {
+  content: ' ';
+  clear: both;
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+/* ===================================================================
+    * 8.0 :: Mobile CSS
+    * ===================================================================
+    */
+@media screen and (max-width: 1260px) {
+}
+
+@media screen and (max-width: 1199px) {
+  #banner {
+    height: auto;
+  }
+
+  .hub {
+    margin-bottom: 60px;
+  }
+}
+/* ===================================================================
+    * 9.0 :: Font
+    * ===================================================================
+    */
+@font-face {
+  font-family: 'texgyreadventor-regular-webfont';
+  src: url('../assets/fonts/texgyreadventor-regular-webfont.woff'),
+    url('../assets/fonts/texgyreadventor-regular-webfont.woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

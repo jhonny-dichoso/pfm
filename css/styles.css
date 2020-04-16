@@ -214,6 +214,14 @@ img {
   padding: 0;
 }
 
+.width-auto {
+  width: auto;
+}
+
+.margin-auto {
+  margin: 0 auto;
+}
+
 /* ===================================================================
     * 3.0 :: Structure / Grid/ Column
     * ===================================================================
@@ -634,6 +642,10 @@ header nav ul li a {
   background-image: url('/assets/img/bg-about.png');
 }
 
+.bg-banner-church-planting {
+  background-image: url('/assets/img/bg-banner-church-planting.png');
+}
+
 .hub {
   width: 100%;
   text-align: center;
@@ -708,12 +720,12 @@ form input[type='submit'] {
 
 /* Page Title Section */
 
-#page-title {
+.page-title {
   min-height: 300px;
   position: relative;
 }
 
-#page-title h1 {
+.page-title h1 {
   position: absolute;
   top: 50%;
   left: 50%;

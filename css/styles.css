@@ -122,6 +122,11 @@ section,
 time {
   display: block;
 }
+
+a {
+  text-decoration: none;
+  display: inline-block;
+}
 /* =================================================================== 
     * 2.0 :: Repeatable Patterns
     * ===================================================================
@@ -139,6 +144,7 @@ img {
   width: 100%;
   height: auto;
   display: block;
+  margin: 0 auto;
 }
 
 .regular {
@@ -147,20 +153,61 @@ img {
 }
 
 .thin {
-  font-family: 'Roboto';
+  /* font-family: 'Roboto'; */
   font-weight: 100;
+}
+
+.fs-36 {
+  font-size: 36px;
+  line-height: 60px;
 }
 
 .my-10 {
   margin: 10px 0;
 }
 
+.text-red {
+  color: #8a0000;
+}
+
 .text-yellow {
   color: #eea813;
 }
 
+.text-blue {
+  color: #4199cf;
+}
+
+.text-green {
+  color: #0f6302;
+}
+
+.text-purple {
+  color: #6a103f;
+}
+
 .text-white {
   color: #fff;
+}
+
+.bg-purple {
+  background-color: #6a103f;
+}
+
+.bg-blue {
+  background-color: #4199cf;
+}
+
+.bg-green {
+  background-color: #0f6302;
+}
+
+.bg-red {
+  background-color: #8a0000;
+}
+
+.bg-white {
+  background-color: #fff;
 }
 
 .text-transform-uppercase {
@@ -202,12 +249,20 @@ img {
   margin-top: 20px;
 }
 
+.pd-30 {
+  padding: 30px;
+}
+
 .text-center {
   text-align: center;
 }
 
 .t-justify {
   text-align: justify;
+}
+
+.t-left {
+  text-align: left;
 }
 
 .no-pd {
@@ -646,6 +701,18 @@ header nav ul li a {
   background-image: url('/assets/img/bg-banner-church-planting.png');
 }
 
+.bg-banner-compassion {
+  background-image: url('/assets/img/bg-banner-compassion.png');
+}
+
+.bg-banner-education {
+  background-image: url('/assets/img/bg-banner-education.png');
+}
+
+.bg-banner-social-enterprise {
+  background-image: url('/assets/img/bg-banner-social-enterprise.png');
+}
+
 .hub {
   width: 100%;
   text-align: center;
@@ -675,6 +742,13 @@ header nav ul li a {
   background-color: #000;
   text-transform: uppercase;
   color: #fff;
+}
+
+.btn {
+  padding: 10px 20px;
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
 }
 
 /* End Banner Section  */
@@ -759,6 +833,37 @@ form input[type='submit'] {
 }
 
 /* End Mission-Vision Section */
+
+/* Ministry Section */
+
+.ministry-card-title {
+  display: inline-block;
+  vertical-align: middle;
+  width: 386px;
+}
+
+.ministry-card-img {
+  display: inline-block;
+  vertical-align: middle;
+  width: 282px;
+}
+
+.ministry-card img {
+  width: 200px;
+  height: 200px;
+}
+
+/* .ministry-card-title {
+  width: 50%;
+  display: inline-block;
+}
+
+.ministry-card span {
+  width: 50%;
+  display: inline-block;
+} */
+
+/* End Ministry Section */
 
 /* ===================================================================
     * 6.0 :: Footer

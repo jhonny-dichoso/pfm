@@ -137,7 +137,7 @@ h1 {
 }
 
 section {
-  padding: 80px 0;
+  padding: 60px 0;
 }
 
 img {
@@ -145,6 +145,18 @@ img {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.fixed {
+  position: fixed;
 }
 
 .regular {
@@ -157,6 +169,10 @@ img {
   font-weight: 100;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 .fs-36 {
   font-size: 36px;
   line-height: 60px;
@@ -166,12 +182,24 @@ img {
   margin: 10px 0;
 }
 
+.w-300 {
+  width: 300px;
+}
+
+.w-213 {
+  width: 213px;
+}
+
 .text-red {
   color: #8a0000;
 }
 
 .text-yellow {
   color: #eea813;
+}
+
+.text-black {
+  color: #000;
 }
 
 .text-blue {
@@ -188,6 +216,10 @@ img {
 
 .text-white {
   color: #fff;
+}
+
+.bg-black {
+  background-color: #000;
 }
 
 .bg-purple {
@@ -253,6 +285,10 @@ img {
   padding: 30px;
 }
 
+.pd-20 {
+  padding: 20px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -313,7 +349,7 @@ img {
 }
 @media (min-width: 1200px) {
   .container {
-    width: 80%;
+    width: 1170px;
   }
 }
 .container-fluid {
@@ -713,6 +749,14 @@ header nav ul li a {
   background-image: url('/assets/img/bg-banner-social-enterprise.png');
 }
 
+.bg-banner-archive {
+  background-image: url('/assets/img/bg-banner-archive.png');
+}
+
+.bg-banner-contact {
+  background-image: url('/assets/img/bg-banner-contact.png');
+}
+
 .hub {
   width: 100%;
   text-align: center;
@@ -744,6 +788,12 @@ header nav ul li a {
   color: #fff;
 }
 
+.btn-card {
+  display: block;
+  padding: 15px 10px;
+  text-transform: uppercase;
+}
+
 .btn {
   padding: 10px 20px;
   text-transform: uppercase;
@@ -766,11 +816,11 @@ header nav ul li a {
   color: #fff;
 }
 
-.form-wrapper {
-  width: 300px;
-  text-align: left;
-  margin: 0 auto;
-  display: inline-block;
+form textarea {
+  display: block;
+  padding: 10px 15px;
+  font-size: inherit;
+  width: 100%;
 }
 
 form input[type='text'] {
@@ -853,17 +903,16 @@ form input[type='submit'] {
   height: 200px;
 }
 
-/* .ministry-card-title {
-  width: 50%;
-  display: inline-block;
+/* End Ministry Section */
+
+/* Archive Section */
+
+.card {
+  width: 400px;
+  height: 400px;
 }
 
-.ministry-card span {
-  width: 50%;
-  display: inline-block;
-} */
-
-/* End Ministry Section */
+/* End Archive Section */
 
 /* ===================================================================
     * 6.0 :: Footer

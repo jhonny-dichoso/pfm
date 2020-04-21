@@ -14,7 +14,7 @@
   <body>
     <header>
       <div class="container">
-        <div class="logo">
+        <div class="logo vertical-align">
           <a href="/index.html"
             ><img
               src="/assets/img/philippine-frontline-ministries-logo.png"
@@ -24,11 +24,13 @@
         <nav>
           <ul>
             <li>
-              <a href="#"><span class="active">HOME</span></a>
+              <a href="#">HOME</a>
             </li>
             <li><a href="#">ABOUT</a></li>
             <li><a href="#">MINISTRIES</a></li>
-            <li><a href="#">ARCHIVE</a></li>
+            <li>
+              <a href="#"><span class="active">ARCHIVE</span></a>
+            </li>
             <li><a href="#">CONTACT</a></li>
             <li><a href="#" class="btn-donate">DONATE</a></li>
           </ul>
@@ -36,63 +38,98 @@
       </div>
     </header>
     <section class="page-title no-pd background-banner bg-banner-archive">
-      <h1 class="text-white">Archive</h1>
+      <div class="layer-black-20 absolute-center">
+        <h1 class="text-white thin">Archive</h1>
+      </div>
     </section>
     <section id="archive">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3">
-            <img
-              src="/assets/img/img-monthly-partners-update.png"
-              alt="Monthly Partners Update Image"
-            />
-            <a href="#" class="btn-card bg-black text-white"
-              >Monthly Partners Update</a
-            >
+          <div class="col-lg-3 col-md-6">
+            <div class="card relative">
+              <img
+                src="/assets/img/img-monthly-partners-update.png"
+                alt="Monthly Partners Update Image"
+              />
+              <a
+                class="absolute d-block bottom-0 left-0 bg-card-white full-width text-white text-transform-uppercase"
+                href="#"
+                >Monthly Partners Update
+                <i class="fa fa-chevron-right" aria-hidden="true"></i
+              ></a>
+            </div>
           </div>
-          <div class="col-lg-3">
-            <img
-              src="/assets/img/img-frontline-asia-documents.png"
-              alt="Frontline Asia Documents Image"
-            />
-            <a href="#" class="btn-card bg-black text-white"
-              >Frontline Asia Documents</a
-            >
+          <div class="col-lg-3 col-md-6">
+            <div class="card relative">
+              <img
+                src="/assets/img/img-frontline-asia-documents.png"
+                alt="Frontline Asia Documents"
+              />
+              <a
+                class="absolute d-block bottom-0 left-0 bg-card-black full-width text-white text-transform-uppercase"
+                href="#"
+                >Frontline Asia Documents
+                <i class="fa fa-chevron-right" aria-hidden="true"></i
+              ></a>
+            </div>
           </div>
-          <div class="col-lg-3">
-            <img
-              src="/assets/img/img-our-weekly-why.png"
-              alt="Our Weekly Why Image"
-            />
-            <a href="#" class="btn-card bg-black text-white">Weekly Why</a>
+          <div class="col-lg-3 col-md-6">
+            <div class="card relative">
+              <img
+                src="/assets/img/img-our-weekly-why.png"
+                alt="Our Weekly Why Image"
+              />
+              <a
+                class="absolute d-block bottom-0 left-0 bg-card-white full-width text-white text-transform-uppercase"
+                href="#"
+                >Weekly Why
+                <i class="fa fa-chevron-right" aria-hidden="true"></i
+              ></a>
+            </div>
           </div>
-          <div class="col-lg-3">
-            <img src="/assets/img/img-videos.png" alt="Videos Image" />
-            <a href="#" class="btn-card bg-black text-white">Videos</a>
+          <div class="col-lg-3 col-md-6">
+            <div class="card relative">
+              <img src="/assets/img/img-videos.png" alt="Videos Image" />
+              <a
+                class="absolute d-block bottom-0 left-0 bg-card-black full-width text-white text-transform-uppercase"
+                href="#"
+                >Videos <i class="fa fa-chevron-right" aria-hidden="true"></i
+              ></a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section id="newsletter" class="background-banner bg-newsletter">
+    <section id="newsletter" class="background-banner bg-newsletter py-80">
       <div class="container">
         <div class="text-center">
-          <h3><span class="text-yellow">subscribe</span> to our newsletter</h3>
+          <h3
+            class="regular ls-1 mb-20 text-transform-uppercase fs-26 text-white"
+          >
+            <span class="text-yellow">Subscribe</span> To Our Newsletter
+          </h3>
           <form action="">
-            <div class="form-wrapper w-300 d-inline-block t-left">
+            <div class="form-wrapper regular w-300 d-inline-block t-left">
               <label for="email" class="text-white">Email Address</label>
               <input type="text" name="email" placeholder="Email Address" />
             </div>
-            <input type="submit" value="SUBSCRIBE" />
+            <input
+              class="heavy fs-14 bg-y bg-yellow"
+              type="submit"
+              value="SUBSCRIBE"
+            />
           </form>
         </div>
       </div>
     </section>
-    <footer>
+    <footer class="py-40 bg-semi-black text-white text-center">
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
             <div class="footer-quicklinks mb-40">
-              <h4>quicklinks</h4>
+              <h4 class="text-yellow text-transform-uppercase fs-18 thin mb-20">
+                Quicklinks
+              </h4>
               <ul>
                 <li><a href="#">Calendar</a></li>
                 <li><a href="#">Contact Us</a></li>
@@ -101,13 +138,15 @@
             </div>
           </div>
           <div class="col-lg-4">
-            <div class="footer-donate mb-40">
-              <a href="#" class="btn-donate d-inline-block">donate</a>
+            <div class="mb-40">
+              <a href="#" class="btn-donate d-inline-block">Donate</a>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="footer-social mb-40">
-              <h4>connect with us</h4>
+              <h4 class="text-yellow text-transform-uppercase fs-18 thin mb-20">
+                Connect With Us
+              </h4>
               <ul>
                 <li>
                   <a href="#"

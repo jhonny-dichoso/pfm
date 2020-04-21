@@ -89,7 +89,7 @@ td {
 body {
   line-height: 1;
   color: #2b2b2b;
-  font: 14px/24px 'texgyreadventor-regular-webfont', Helvetica, sans-serif;
+  font: 14px/24px 'Lato-Regular', Helvetica, sans-serif;
 }
 
 table {
@@ -107,9 +107,12 @@ html {
 
 h1,
 h2 {
-  font-family: 'texgyreadventor-bold-webfont';
+  font-family: 'Lato-Regular';
   font-size: 42px;
-  line-height: 70px;
+}
+
+p {
+  line-height: 26px;
 }
 
 article,
@@ -166,26 +169,69 @@ img {
 }
 
 .regular {
-  font-family: 'Roboto';
-  font-weight: 400;
+  font-family: 'Lato-Regular';
 }
 
 .thin {
-  /* font-family: 'Roboto'; */
-  font-weight: 100;
+  font-family: 'Lato-Thin';
+}
+
+.medium {
+  font-family: 'Lato-Medium';
+}
+
+.semibold {
+  font-family: 'Lato-Semibold';
+}
+
+.heavy {
+  font-family: 'Lato-Heavy';
 }
 
 .bold {
   font-weight: bold;
 }
 
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-18 {
+  font-size: 18px;
+}
+
+.fs-26 {
+  font-size: 26px;
+}
+
+.fs-28 {
+  font-size: 28px;
+}
+
+.fs-32 {
+  font-size: 32px;
+  line-height: 48px;
+}
+
 .fs-36 {
   font-size: 36px;
-  line-height: 60px;
+  line-height: 50px;
+}
+
+.fs-59 {
+  font-size: 59px;
 }
 
 .my-10 {
   margin: 10px 0;
+}
+
+.my-30 {
+  margin: 30px 0;
+}
+
+.my-60 {
+  margin: 60px 0;
 }
 
 .w-300 {
@@ -194,6 +240,10 @@ img {
 
 .w-213 {
   width: 213px;
+}
+
+.text-decoration-none {
+  text-decoration: none;
 }
 
 .text-red {
@@ -228,6 +278,10 @@ img {
   background-color: #000;
 }
 
+.bg-semi-black {
+  background-color: #131313;
+}
+
 .bg-purple {
   background-color: #6a103f;
 }
@@ -246,6 +300,14 @@ img {
 
 .bg-white {
   background-color: #fff;
+}
+
+.bg-grey {
+  background-color: #ddd;
+}
+
+.bg-yellow {
+  background-color: #eea813;
 }
 
 .text-transform-uppercase {
@@ -271,12 +333,28 @@ img {
   display: inline-block;
 }
 
+.mb-80 {
+  margin-bottom: 80px;
+}
+
 .mb-40 {
   margin-bottom: 40px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mb-60 {
+  margin-bottom: 60px;
+}
+
 .mt-40 {
   margin-top: 40px;
+}
+
+.mt-70 {
+  margin-top: 70px;
 }
 
 .mb-20 {
@@ -287,6 +365,26 @@ img {
   margin-top: 20px;
 }
 
+.px-30 {
+  padding: 0 30px;
+}
+
+.py-20 {
+  padding: 20px 0;
+}
+
+.py-40 {
+  padding: 40px 0;
+}
+
+.py-80 {
+  padding: 80px 0;
+}
+
+.pd-15 {
+  padding: 15px;
+}
+
 .pd-30 {
   padding: 30px;
 }
@@ -295,8 +393,24 @@ img {
   padding: 20px;
 }
 
+.ls-1 {
+  letter-spacing: 1px;
+}
+
 .text-center {
   text-align: center;
+}
+
+.absolute-center {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.h-328 {
+  height: 328px;
 }
 
 .t-justify {
@@ -305,6 +419,11 @@ img {
 
 .t-left {
   text-align: left;
+}
+
+.vertical-align {
+  display: flex;
+  align-items: center;
 }
 
 .no-pd {
@@ -704,23 +823,39 @@ header nav ul li a {
   height: 90vh;
 }
 
-#banner h1 {
-  text-align: center;
-  margin: 60px 0;
-}
-
-.banner-wrapper {
-  border: 1px solid red;
-}
-
 .background-banner {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+.layer-black {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.layer-red {
+  background-color: rgba(138, 0, 0, 0.6);
+}
+
+.layer-blue {
+  background-color: rgba(65, 153, 207, 0.6);
+}
+
+.layer-green {
+  background-color: rgba(15, 99, 2, 0.6);
+}
+
+.layer-purple {
+  background-color: rgba(106, 16, 63, 0.6);
+}
+
+.layer-black-20 {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 .bg-church-planting {
   background-image: url('/assets/img/bg-church-planting.png');
+  background-color: rgba(76, 175, 80, 0.3);
 }
 
 .bg-compassion {
@@ -763,37 +898,6 @@ header nav ul li a {
   background-image: url('/assets/img/bg-banner-contact.png');
 }
 
-.hub {
-  width: 100%;
-  text-align: center;
-  background-color: #ddd;
-  color: #fff;
-}
-
-.hub h2 {
-  padding: 15px 0;
-  font-size: 18px;
-}
-
-.hub p {
-  margin: 30px 0;
-  text-align: center;
-  padding: 0px 30px;
-}
-
-.hub a {
-  display: block;
-  text-decoration: none;
-  color: #fff;
-}
-
-.btn-hub {
-  padding: 20px 0px;
-  background-color: #000;
-  text-transform: uppercase;
-  color: #fff;
-}
-
 .btn-card {
   display: block;
   padding: 15px 10px;
@@ -807,6 +911,15 @@ header nav ul li a {
   text-align: center;
 }
 
+.hub > a:last-child:hover {
+  transition: 0.2s all ease-in;
+}
+
+.hub > a:last-child:hover {
+  background-color: #000;
+  color: #fff;
+}
+
 /* End Banner Section  */
 
 /* Newsletter Section */
@@ -815,33 +928,16 @@ header nav ul li a {
   background-image: url('/assets/img/bg-newsletter.png');
 }
 
-#newsletter h3 {
-  margin-bottom: 20px;
-  text-transform: uppercase;
-  font-size: 26px;
-  color: #fff;
-}
-
-form textarea {
-  display: block;
+form textarea,
+input[type='text'] {
   padding: 10px 15px;
-  font-size: inherit;
   width: 100%;
-}
-
-form input[type='text'] {
-  width: 100%;
-  padding: 10px 15px;
-  font-size: inherit;
 }
 
 form input[type='submit'] {
   padding: 12px 25px;
-  background-color: #eea813;
-  font-size: inherit;
   color: #fff;
   border: none;
-  font-weight: bold;
   cursor: pointer;
   margin-left: 9px;
 }
@@ -863,6 +959,7 @@ form input[type='submit'] {
   text-transform: uppercase;
   text-align: center;
   font-size: 38px;
+  line-height: 60px;
 }
 
 /* End Page Title Section */
@@ -870,9 +967,9 @@ form input[type='submit'] {
 /* History Section */
 
 .history-img-wrapper {
-  width: 500px;
-  height: 500px;
-  margin: 0 auto;
+  width: 400px;
+  height: auto;
+  margin: 95px auto;
 }
 
 /* End History Section */
@@ -892,7 +989,7 @@ form input[type='submit'] {
 
 /* Ministry Section */
 
-.ministry-card-title {
+/* .ministry-card-title {
   display: inline-block;
   vertical-align: middle;
   width: 386px;
@@ -907,36 +1004,12 @@ form input[type='submit'] {
 .ministry-card img {
   width: 200px;
   height: 200px;
-}
-
-/* End Ministry Section */
-
-/* Archive Section */
-
-/* .card {
-  width: 400px;
-  height: 400px;
 } */
-
-/* End Archive Section */
 
 /* ===================================================================
     * 6.0 :: Footer
     * ===================================================================
     */
-
-footer {
-  padding: 40px 0;
-  background-color: #131313;
-  color: #fff;
-  text-align: center;
-}
-
-footer h4 {
-  color: #eea813;
-  text-transform: uppercase;
-  font-size: 18px;
-}
 
 footer ul li {
   list-style-type: none;
@@ -993,6 +1066,10 @@ article:after {
     height: auto;
   }
 
+  nav {
+    display: none;
+  }
+
   .hub {
     margin-bottom: 60px;
   }
@@ -1001,10 +1078,42 @@ article:after {
     * 9.0 :: Font
     * ===================================================================
     */
+
 @font-face {
-  font-family: 'texgyreadventor-regular-webfont';
-  src: url('../assets/fonts/texgyreadventor-regular-webfont.woff'),
-    url('../assets/fonts/texgyreadventor-regular-webfont.woff2');
+  font-family: 'Lato-Regular';
+  src: url('/assets/fonts/Lato-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato-Thin';
+  src: url('/assets/fonts/Lato-Thin.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato-Medium';
+  src: url('/assets/fonts/Lato-Medium.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato-Semibold';
+  src: url('/assets/fonts/Lato-Semibold.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato-Heavy';
+  src: url('/assets/fonts/Lato-Heavy.ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

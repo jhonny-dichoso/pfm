@@ -115,6 +115,15 @@ p {
   line-height: 26px;
 }
 
+sub {
+  font-size: 12px;
+  font-family: 'Lato-Regular';
+}
+
+.fa {
+  vertical-align: middle;
+}
+
 article,
 aside,
 figure,
@@ -197,12 +206,12 @@ img {
   font-family: 'Lato-Semibold';
 }
 
-.heavy {
-  font-family: 'Lato-Heavy';
+.bold {
+  font-family: 'Lato-Bold';
 }
 
-.bold {
-  font-weight: bold;
+.heavy {
+  font-family: 'Lato-Heavy';
 }
 
 .fs-14 {
@@ -469,6 +478,10 @@ img {
 
 .margin-auto {
   margin: 0 auto;
+}
+
+.margin-left-0 {
+  margin-left: 0 !important;
 }
 
 /* ===================================================================
@@ -968,8 +981,10 @@ header nav ul li a {
 
 form textarea,
 input[type='text'] {
-  padding: 10px 15px;
+  padding: 12px 15px;
   width: 100%;
+  resize: none;
+  vertical-align: middle;
 }
 
 form input[type='submit'] {
@@ -978,6 +993,7 @@ form input[type='submit'] {
   border: none;
   cursor: pointer;
   margin-left: 9px;
+  vertical-align: middle;
 }
 
 /* End Newsletter Section */
@@ -1025,24 +1041,9 @@ form input[type='submit'] {
 
 /* End Mission-Vision Section */
 
-/* Ministry Section */
-
-/* .ministry-card-title {
-  display: inline-block;
-  vertical-align: middle;
-  width: 386px;
+.contact-wrapper {
+  margin: 20px auto;
 }
-
-.ministry-card-img {
-  display: inline-block;
-  vertical-align: middle;
-  width: 282px;
-}
-
-.ministry-card img {
-  width: 200px;
-  height: 200px;
-} */
 
 /* ===================================================================
     * 6.0 :: Footer
@@ -1144,6 +1145,14 @@ article:after {
 @font-face {
   font-family: 'Lato-Semibold';
   src: url('/assets/fonts/Lato-Semibold.ttf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Lato-Bold';
+  src: url('/assets/fonts/Lato-Bold.ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

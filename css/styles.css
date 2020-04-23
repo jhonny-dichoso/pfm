@@ -120,6 +120,10 @@ sub {
   font-family: 'Lato-Regular';
 }
 
+hr {
+  margin: 0;
+}
+
 .fa {
   vertical-align: middle;
 }
@@ -157,6 +161,22 @@ img {
   height: auto;
   display: block;
   margin: 0 auto;
+}
+
+.break-word {
+  overflow-wrap: break-word;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.space-between {
+  justify-content: space-between;
 }
 
 .card {
@@ -252,6 +272,10 @@ img {
   margin: 30px 0;
 }
 
+.my-40 {
+  margin: 40px 0;
+}
+
 .my-60 {
   margin: 60px 0;
 }
@@ -260,12 +284,40 @@ img {
   width: 100%;
 }
 
+.border-grey {
+  border: 1px solid #e0e0e0;
+}
+
+.w-432 {
+  width: 432px;
+}
+
+.w-336 {
+  width: 336px;
+}
+
 .w-300 {
   width: 300px;
 }
 
+.w-273 {
+  width: 273px;
+}
+
+.w-214 {
+  width: 214px;
+}
+
 .w-213 {
   width: 213px;
+}
+
+.w-235 {
+  width: 235px;
+}
+
+.w-52 {
+  width: 52px;
 }
 
 .text-decoration-none {
@@ -375,6 +427,19 @@ img {
   left: 0;
 }
 
+.right-0 {
+  right: 0;
+}
+
+.caret-down {
+  bottom: 9px;
+  right: 14px;
+}
+
+.caret-down i {
+  font-size: 20px;
+}
+
 .mb-80 {
   margin-bottom: 80px;
 }
@@ -403,8 +468,20 @@ img {
   margin-bottom: 20px;
 }
 
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-5 {
+  margin-bottom: 5px;
+}
+
 .mt-20 {
   margin-top: 20px;
+}
+
+.pt-0 {
+  padding-top: 0;
 }
 
 .px-30 {
@@ -463,9 +540,17 @@ img {
   text-align: left;
 }
 
+.t-right {
+  text-align: right;
+}
+
 .vertical-align {
   display: flex;
   align-items: center;
+}
+
+.vertical-align-middle {
+  vertical-align: middle;
 }
 
 .no-pd {
@@ -815,7 +900,6 @@ img {
     */
 
 header {
-  /* border: 1px solid red; */
   height: 10vh;
   background-color: #f1f1f1;
 }
@@ -852,6 +936,20 @@ header nav ul li a {
   display: inline-block;
   padding: 0 16px;
   color: #000;
+}
+
+header nav ul li ul {
+  position: absolute;
+  left: -20px;
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 0 10px;
+  display: none;
+}
+
+.dropdown {
+  display: block;
+  z-index: 2;
 }
 
 .active {
@@ -949,6 +1047,10 @@ header nav ul li a {
   background-image: url('/assets/img/bg-banner-contact.png');
 }
 
+.bg-banner-donate {
+  background-image: url('/assets/img/bg-banner-donate.png');
+}
+
 .btn-card {
   display: block;
   padding: 15px 10px;
@@ -979,12 +1081,38 @@ header nav ul li a {
   background-image: url('/assets/img/bg-newsletter.png');
 }
 
+form select {
+  display: block;
+  width: 100%;
+  padding: 12px 25px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 12px 25px;
+  border: 1px solid #e0e0e0;
+  border-radius: none;
+  outline: none;
+  background-color: #fff;
+}
+
+form input[type='text']:focus,
+form textarea:focus {
+  box-shadow: 0 0 5px rgba(238, 168, 19, 1);
+  border: 1px solid rgba(238, 168, 19, 1);
+}
+
 form textarea,
 input[type='text'] {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  outline: none;
   padding: 12px 15px;
   width: 100%;
   resize: none;
   vertical-align: middle;
+  border: 1px solid #e0e0e0;
 }
 
 form input[type='submit'] {
@@ -1042,6 +1170,18 @@ form input[type='submit'] {
 /* End Mission-Vision Section */
 
 .contact-wrapper {
+  margin: 20px auto;
+}
+
+.credit-card {
+  margin: 20px auto;
+}
+
+.credit-card-wrapper {
+  padding: 15px 20px;
+}
+
+.transaction-form-wrapper {
   margin: 20px auto;
 }
 
@@ -1111,6 +1251,56 @@ article:after {
 
   .hub {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 482px) {
+  #newsletter h3 {
+    line-height: 30px;
+  }
+
+  #newsletter .w-300 {
+    display: block;
+    width: 100%;
+  }
+
+  #newsletter input[type='text'] {
+    margin-bottom: 15px;
+  }
+
+  #newsletter input[type='submit'] {
+    display: block;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .w-432 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 414px) {
+  .w-336 {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .credit-card-wrapper p {
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  .credit-card-wrapper .w-235 {
+    margin: 20px auto;
+  }
+
+  .credit-card-wrapper .w-52 {
+    margin: 20px auto;
+  }
+
+  .credit-card-wrapper .vertical-align {
+    display: block;
   }
 }
 /* ===================================================================

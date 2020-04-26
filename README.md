@@ -2,6 +2,6 @@
 
 Philippine Frontline Ministries Repository.
 
-##
+## Slack Integration
 
-Added Github Integration.
+Added Slack/Github Integration.

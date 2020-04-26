@@ -956,6 +956,7 @@ header .logo {
 
 header nav {
   float: right;
+  /* position: relative; */
 }
 
 header nav ul {
@@ -1331,7 +1332,7 @@ article:after {
 
   #banner {
     height: auto;
-    z-index: -1;
+    /* z-index: -1; */
   }
 
   nav {
@@ -1341,7 +1342,6 @@ article:after {
   .btnBurger {
     display: block;
   }
-
   header {
     border-bottom: 2px solid #eea813;
   }
@@ -1350,6 +1350,7 @@ article:after {
     float: none;
     z-index: 9999;
     background-color: #f1f1f1;
+    position: relative;
   }
 
   header .container {

@@ -310,6 +310,10 @@ img {
   width: 273px;
 }
 
+.w-263 {
+  width: 263px;
+}
+
 .w-214 {
   width: 214px;
 }
@@ -1031,6 +1035,46 @@ header nav ul li ul {
   position: relative;
 }
 
+.tooltip {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.tooltip .tooltiptext {
+  display: inline-block;
+  visibility: hidden;
+  width: 262.5px;
+  background-color: rgba(106, 16, 63, 0.3);
+  color: #000;
+  text-align: center;
+  padding: 5px 0;
+  border: 1px solid #6a103f;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: -60px;
+}
+
+.tooltiptext a {
+  transition: all 0.2s ease-out;
+}
+
+.tooltiptext a:hover {
+  color: #6a103f;
+}
+
+.tooltip:hover {
+  background-color: #000;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
 .background-banner {
   background-size: cover;
   background-position: center;
@@ -1066,52 +1110,52 @@ header nav ul li ul {
 }
 
 .bg-church-planting {
-  background-image: url('/assets/img/bg-church-planting.png');
+  background-image: url('../assets/img/bg-church-planting.png');
   background-color: rgba(76, 175, 80, 0.3);
 }
 
 .bg-compassion {
-  background-image: url('/assets/img/bg-compassion.png');
+  background-image: url('../assets/img/bg-compassion.png');
 }
 
 .bg-education {
-  background-image: url('/assets/img/bg-education.png');
+  background-image: url('../assets/img/bg-education.png');
 }
 
 .bg-social-enterprise {
-  background-image: url('/assets/img/bg-social-enterprise.png');
+  background-image: url('../assets/img/bg-social-enterprise.png');
 }
 
 .bg-about {
-  background-image: url('/assets/img/bg-about.png');
+  background-image: url('../assets/img/bg-about.png');
 }
 
 .bg-banner-church-planting {
-  background-image: url('/assets/img/bg-banner-church-planting.png');
+  background-image: url('../assets/img/bg-banner-church-planting.png');
 }
 
 .bg-banner-compassion {
-  background-image: url('/assets/img/bg-banner-compassion.png');
+  background-image: url('../assets/img/bg-banner-compassion.png');
 }
 
 .bg-banner-education {
-  background-image: url('/assets/img/bg-banner-education.png');
+  background-image: url('../assets/img/bg-banner-education.png');
 }
 
 .bg-banner-social-enterprise {
-  background-image: url('/assets/img/bg-banner-social-enterprise.png');
+  background-image: url('../assets/img/bg-banner-social-enterprise.png');
 }
 
 .bg-banner-archive {
-  background-image: url('/assets/img/bg-banner-archive.png');
+  background-image: url('../assets/img/bg-banner-archive.png');
 }
 
 .bg-banner-contact {
-  background-image: url('/assets/img/bg-banner-contact.png');
+  background-image: url('../assets/img/bg-banner-contact.png');
 }
 
 .bg-banner-donate {
-  background-image: url('/assets/img/bg-banner-donate.png');
+  background-image: url('../assets/img/bg-banner-donate.png');
 }
 
 .btn {
@@ -1135,7 +1179,7 @@ header nav ul li ul {
 /* Newsletter Section */
 
 .bg-newsletter {
-  background-image: url('/assets/img/bg-newsletter.png');
+  background-image: url('../assets/img/bg-newsletter.png');
 }
 
 form select {
@@ -1326,12 +1370,24 @@ article:after {
 }
 
 @media screen and (max-width: 1199px) {
+  .tooltip .tooltiptext a {
+    display: block;
+  }
+
+  .tooltip .tooltiptext {
+    width: 100%;
+  }
+
   .icon-wrapper {
     padding: 80px;
   }
 
   .card {
     margin: 30px auto;
+  }
+
+  #thank-you {
+    text-align: center;
   }
 
   #thank-you img {
@@ -1403,9 +1459,12 @@ article:after {
     display: none;
   }
 
-  #ministries,
-  p {
-    text-align: center !important;
+  #ministries {
+    text-align: center;
+  }
+
+  #ministries .t-justify {
+    text-align: center;
   }
 
   #ministries .vertical-align {
@@ -1489,7 +1548,7 @@ article:after {
 
 @font-face {
   font-family: 'Lato-Regular';
-  src: url('/assets/fonts/Lato-Regular.ttf');
+  src: url('../assets/fonts/Lato-Regular.ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1497,7 +1556,7 @@ article:after {
 
 @font-face {
   font-family: 'Lato-Thin';
-  src: url('/assets/fonts/Lato-Light.ttf');
+  src: url('../assets/fonts/Lato-Light.ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1505,7 +1564,7 @@ article:after {
 
 @font-face {
   font-family: 'Lato-Medium';
-  src: url('/assets/fonts/Lato-Medium.ttf');
+  src: url('../assets/fonts/Lato-Medium.ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1513,7 +1572,7 @@ article:after {
 
 @font-face {
   font-family: 'Lato-Semibold';
-  src: url('/assets/fonts/Lato-Semibold.ttf');
+  src: url('../assets/fonts/Lato-Semibold.ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1521,7 +1580,7 @@ article:after {
 
 @font-face {
   font-family: 'Lato-Bold';
-  src: url('/assets/fonts/Lato-Bold.ttf');
+  src: url('../assets/fonts/Lato-Bold.ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -1529,7 +1588,7 @@ article:after {
 
 @font-face {
   font-family: 'Lato-Heavy';
-  src: url('/assets/fonts/Lato-Heavy.ttf');
+  src: url('../assets/fonts/Lato-Heavy.ttf');
   font-weight: normal;
   font-style: normal;
   font-display: swap;

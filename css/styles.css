@@ -1026,6 +1026,11 @@ header nav ul li ul {
   height: 90vh;
 }
 
+#banner-mobile {
+  height: 90vh;
+  position: relative;
+}
+
 .background-banner {
   background-size: cover;
   background-position: center;
@@ -1321,6 +1326,14 @@ article:after {
 }
 
 @media screen and (max-width: 1199px) {
+  .icon-wrapper {
+    padding: 80px;
+  }
+
+  .card {
+    margin: 30px auto;
+  }
+
   #thank-you img {
     margin-top: 40px;
   }
@@ -1332,7 +1345,6 @@ article:after {
 
   #banner {
     height: auto;
-    /* z-index: -1; */
   }
 
   nav {
@@ -1383,6 +1395,25 @@ article:after {
 
   .hub {
     margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #banner {
+    display: none;
+  }
+
+  #ministries,
+  p {
+    text-align: center !important;
+  }
+
+  #ministries .vertical-align {
+    flex-direction: column-reverse;
+  }
+
+  .icon-wrapper {
+    padding: 40px;
   }
 }
 

@@ -1204,6 +1204,7 @@ form textarea:focus {
 
 form textarea,
 input[type='text'] {
+  transition: all 0.2s ease-in-out;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -1305,6 +1306,10 @@ form input[type='submit'] {
   color: #eea813;
 }
 
+.partners-img-wrapper {
+  padding: 0 140px;
+}
+
 /* ===================================================================
     * 6.0 :: Footer
     * ===================================================================
@@ -1370,6 +1375,10 @@ article:after {
 }
 
 @media screen and (max-width: 1199px) {
+  .latest-post {
+    margin-top: 40px;
+  }
+
   .tooltip .tooltiptext a {
     display: block;
   }
@@ -1455,6 +1464,14 @@ article:after {
 }
 
 @media screen and (max-width: 768px) {
+  #history {
+    text-align: center;
+  }
+
+  #history-pfm .t-justify {
+    text-align: center;
+  }
+
   #banner {
     display: none;
   }
@@ -1502,6 +1519,14 @@ article:after {
 }
 
 @media screen and (max-width: 414px) {
+  .partners-img-wrapper {
+    padding: 0 60px;
+  }
+
+  .history-img-wrapper {
+    width: 100%;
+  }
+
   .w-336 {
     width: 100%;
   }

@@ -2,8 +2,8 @@ const btnDropdown = document.querySelector('.btnDropdown');
 const listMinistries = document.querySelector('.listMinistries');
 const btnBurger = document.querySelector('.btnBurger');
 const nav = document.querySelector('nav');
-const paymentMethod = document.querySelector('.payment-method');
-const paymentMethods = document.querySelectorAll('.payment-method');
+// const paymentMethod = document.querySelector('.payment-method');
+// const paymentMethods = document.querySelectorAll('.payment-method');
 
 btnDropdown.addEventListener('click', () => {
   if (!listMinistries.classList.contains('dropdown')) {
@@ -21,15 +21,15 @@ btnBurger.addEventListener('click', () => {
   }
 });
 
-paymentMethod.addEventListener('click', () => {
-  for (i = 0; i < paymentMethods.length; i++) {
-    if (paymentMethods[i].checked) {
-      console.log(paymentMethods.value);
+// paymentMethod.addEventListener('click', () => {
+//   for (i = 0; i < paymentMethods.length; i++) {
+//     if (paymentMethods[i].checked) {
+//       console.log(paymentMethods.value);
 
-      break;
-    }
-  }
-});
+//       break;
+//     }
+//   }
+// });
 
 // paymentMethod.addEventListener('click', () => {
 //   Array.from(paymentMethods).forEach((methods) => {
@@ -47,3 +47,12 @@ paymentMethod.addEventListener('click', () => {
 //     console.log(paymentMethod);
 //   }
 // });
+
+new Glider(document.querySelector('.glider'), {
+  slidesToShow: 1,
+  slideToScroll: 1,
+  arrows: {
+    prev: '.glider-prev',
+    next: '.glider-next',
+  },
+});

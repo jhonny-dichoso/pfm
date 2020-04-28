@@ -192,6 +192,10 @@ img {
   justify-content: center;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .height-vh-90 {
   min-height: 90vh;
 }
@@ -455,10 +459,8 @@ img {
 }
 
 .btnBurger {
-  position: absolute;
+  padding: 0 40px;
   cursor: pointer;
-  top: 20px;
-  right: 20px;
   display: none;
 }
 
@@ -1480,6 +1482,12 @@ article:after {
 }
 
 @media screen and (max-width: 1199px) {
+  .header-mobile-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
   header nav ul li a,
   .listMinistries li a {
     height: 7vh;
@@ -1649,16 +1657,9 @@ article:after {
   .w-336 {
     width: 100%;
   }
-
-  .btnBurger {
-    top: 10px;
-  }
 }
 
 @media screen and (max-width: 375px) {
-  .btnBurger {
-    top: 8px;
-  }
 }
 
 @media screen and (max-width: 374px) {
@@ -1681,9 +1682,6 @@ article:after {
 }
 
 @media screen and (max-width: 320px) {
-  .btnBurger {
-    top: 2px;
-  }
 }
 /* ===================================================================
     * 9.0 :: Font

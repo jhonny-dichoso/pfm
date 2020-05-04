@@ -581,6 +581,10 @@ img {
   padding-top: 60px;
 }
 
+.px-140 {
+  padding: 0 140px;
+}
+
 .px-30 {
   padding: 0 30px;
 }
@@ -1103,46 +1107,6 @@ header nav ul li ul {
   border: unset;
 }
 
-.tooltip {
-  position: relative;
-  display: block;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-.tooltip .tooltiptext {
-  display: inline-block;
-  visibility: hidden;
-  width: 262.5px;
-  background-color: rgba(106, 16, 63, 0.3);
-  color: #000;
-  text-align: center;
-  padding: 5px 0;
-  border: 1px solid #6a103f;
-
-  /* Position the tooltip */
-  position: absolute;
-  z-index: 1;
-  left: 0;
-  bottom: -60px;
-}
-
-.tooltiptext a {
-  transition: all 0.2s ease-out;
-}
-
-.tooltiptext a:hover {
-  color: #6a103f;
-}
-
-.tooltip:hover {
-  background-color: #000;
-}
-
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-}
-
 .background-banner {
   background-size: cover;
   background-position: center;
@@ -1198,52 +1162,51 @@ header nav ul li ul {
 }
 
 .bg-church-planting {
-  background-image: url('../assets/img/bg-church-planting.png');
-  background-color: rgba(76, 175, 80, 0.3);
+  background-image: url('../assets/img/bg-church-planting.jpg');
 }
 
 .bg-compassion {
-  background-image: url('../assets/img/bg-compassion.png');
+  background-image: url('../assets/img/bg-compassion.jpg');
 }
 
 .bg-education {
-  background-image: url('../assets/img/bg-education.png');
+  background-image: url('../assets/img/bg-education.jpg');
 }
 
 .bg-social-enterprise {
-  background-image: url('../assets/img/bg-social-enterprise.png');
+  background-image: url('../assets/img/bg-social-enterprise.jpg');
 }
 
 .bg-about {
-  background-image: url('../assets/img/bg-about.png');
+  background-image: url('../assets/img/bg-about.jpg');
 }
 
 .bg-banner-church-planting {
-  background-image: url('../assets/img/bg-banner-church-planting.png');
+  background-image: url('../assets/img/bg-banner-church-planting.jpg');
 }
 
 .bg-banner-compassion {
-  background-image: url('../assets/img/bg-banner-compassion.png');
+  background-image: url('../assets/img/bg-banner-compassion.jpg');
 }
 
 .bg-banner-education {
-  background-image: url('../assets/img/bg-banner-education.png');
+  background-image: url('../assets/img/bg-banner-education.jpg');
 }
 
 .bg-banner-social-enterprise {
-  background-image: url('../assets/img/bg-banner-social-enterprise.png');
+  background-image: url('../assets/img/bg-banner-social-enterprise.jpg');
 }
 
 .bg-banner-archive {
-  background-image: url('../assets/img/bg-banner-archive.png');
+  background-image: url('../assets/img/bg-banner-archive.jpg');
 }
 
 .bg-banner-contact {
-  background-image: url('../assets/img/bg-banner-contact.png');
+  background-image: url('../assets/img/bg-banner-contact.jpg');
 }
 
 .bg-banner-donate {
-  background-image: url('../assets/img/bg-banner-donate.png');
+  background-image: url('../assets/img/bg-banner-donate.jpg');
 }
 
 .glider-prev {
@@ -1413,10 +1376,6 @@ form input[type='submit'] {
   color: #eea813;
 }
 
-.partners-img-wrapper {
-  padding: 0 140px;
-}
-
 /* ===================================================================
     * 6.0 :: Footer
     * ===================================================================
@@ -1500,14 +1459,6 @@ article:after {
 
   .latest-post {
     margin-top: 40px;
-  }
-
-  .tooltip .tooltiptext a {
-    display: block;
-  }
-
-  .tooltip .tooltiptext {
-    width: 100%;
   }
 
   .icon-wrapper {
@@ -1646,8 +1597,13 @@ article:after {
 }
 
 @media screen and (max-width: 414px) {
-  .partners-img-wrapper {
-    padding: 0 60px;
+  .page-title {
+    min-height: 140px;
+  }
+
+  .page-title h1 {
+    font-size: 18px;
+    line-height: 1.6;
   }
 
   .history-img-wrapper {
@@ -1657,9 +1613,6 @@ article:after {
   .w-336 {
     width: 100%;
   }
-}
-
-@media screen and (max-width: 375px) {
 }
 
 @media screen and (max-width: 374px) {

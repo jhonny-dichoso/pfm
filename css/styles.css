@@ -200,6 +200,10 @@ img {
   min-height: 90vh;
 }
 
+.min-height-300 {
+  min-height: 300px;
+}
+
 .card {
   width: 261px;
   height: 262px;
@@ -1304,7 +1308,7 @@ form input[type='submit'] {
 /* Page Title Section */
 
 .page-title {
-  min-height: 300px;
+  min-height: 200px;
   position: relative;
 }
 

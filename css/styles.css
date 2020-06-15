@@ -780,6 +780,10 @@ img {
   width: auto;
 }
 
+.width-100 {
+  width: 100px;
+}
+
 .margin-auto {
   margin: 0 auto;
 }
@@ -1223,7 +1227,7 @@ header nav ul li ul {
 }
 
 .layer-red {
-  background-color: rgba(138, 0, 0, 0.6);
+  background-color: rgba(138, 0, 0, 0.8);
 }
 
 .layer-red-70 {
@@ -1231,7 +1235,7 @@ header nav ul li ul {
 }
 
 .layer-blue {
-  background-color: rgba(65, 153, 207, 0.6);
+  background-color: rgba(65, 153, 207, 0.85);
 }
 
 .layer-blue-70 {
@@ -1239,7 +1243,7 @@ header nav ul li ul {
 }
 
 .layer-green {
-  background-color: rgba(15, 99, 2, 0.6);
+  background-color: rgba(15, 99, 2, 0.85);
 }
 
 .layer-green-70 {
@@ -1247,7 +1251,7 @@ header nav ul li ul {
 }
 
 .layer-purple {
-  background-color: rgba(106, 16, 63, 0.6);
+  background-color: rgba(106, 16, 63, 0.85);
 }
 
 .layer-purple-70 {

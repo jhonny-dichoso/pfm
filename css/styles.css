@@ -360,6 +360,14 @@ img {
   font-size: 59px;
 }
 
+.mx-10 {
+  margin: 0 10px;
+}
+
+.mx-20 {
+  margin: 0 20px;
+}
+
 .my-5 {
   margin: 5px;
 }
@@ -504,6 +512,10 @@ img {
   background-color: #eea813;
 }
 
+.bg-yellow-70 {
+  background-color: rgba(238, 168, 19, 0.7);
+}
+
 .bg-transparent {
   background-color: transparent;
 }
@@ -512,8 +524,18 @@ img {
   border: 1px solid #fff;
 }
 
+.border-yellow {
+  border: 1px solid #eea813;
+}
+
 .text-transform-uppercase {
   text-transform: uppercase;
+}
+
+.btn-active {
+  font-family: 'Lato-Heavy';
+  background-color: #eea813;
+  color: white;
 }
 
 .btn-donate {
@@ -566,12 +588,16 @@ img {
   flex-direction: row;
 }
 
+.d-none {
+  display: none !important;
+}
+
 .d-block {
-  display: block;
+  display: block !important;
 }
 
 .d-inline-block {
-  display: inline-block;
+  display: inline-block !important;
 }
 
 .bottom-0 {
@@ -685,6 +711,10 @@ img {
 
 .px-140 {
   padding: 0 140px;
+}
+
+.px-10 {
+  padding: 10px;
 }
 
 .px-30 {
@@ -1306,8 +1336,12 @@ header nav ul li ul {
   background-image: url('../assets/img/bg-banner-social-enterprise.jpg');
 }
 
-.bg-banner-archive {
-  background-image: url('../assets/img/bg-banner-archive.jpg');
+.bg-banner-resources {
+  background-image: url('../assets/img/bg-banner-resources.jpeg');
+}
+
+.bg-banner-mpu {
+  background-image: url('../assets/img/bg-banner-mpu.jpeg');
 }
 
 .bg-banner-contact {
@@ -1485,6 +1519,14 @@ form input[type='submit'] {
   color: #eea813;
 }
 
+.resource:not(#resources-videos) {
+  display: none;
+}
+
+.mpu:not(#mpu2020) {
+  display: none;
+}
+
 /* ===================================================================
     * 6.0 :: Footer
     * ===================================================================
@@ -1584,7 +1626,7 @@ article:after {
   }
 
   .card {
-    margin: 30px auto;
+    margin: 40px auto;
   }
 
   #thank-you {
@@ -1719,6 +1761,32 @@ article:after {
 }
 
 @media screen and (max-width: 414px) {
+  .category-items {
+    display: none;
+  }
+
+  #btnCategoryDropdown span {
+    position: absolute;
+    right: 20px;
+  }
+
+  #btnCategoryDropdown {
+    background-color: rgba(238, 168, 19, 1);
+    position: relative;
+    display: block;
+  }
+
+  .categories a {
+    display: block !important;
+    background-color: rgba(238, 168, 19, 0.7);
+    border: none;
+    color: white;
+  }
+
+  .categories {
+    margin-bottom: 20px !important;
+  }
+
   .icon-wrapper {
     padding: 40px 0 0 0 !important;
   }

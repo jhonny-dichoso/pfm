@@ -33,3 +33,159 @@ window.addEventListener('load', function () {
     },
   });
 });
+
+const categories = document.querySelectorAll('.categories a');
+const btnCategoryDropdown = document.querySelector('#btnCategoryDropdown');
+const categoryItems = document.querySelector('.category-items');
+
+btnCategoryDropdown.addEventListener('click', () => {
+  btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+    'fa-chevron-right'
+  );
+  btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+    'fa-chevron-down'
+  );
+  categoryItems.classList.toggle('d-block');
+});
+
+const arrPromise = (array) => {
+  return new Promise((resolve) => {
+    resolve(Array.from(array));
+  });
+};
+
+async function toggleCategories(array) {
+  const arrPromises = await arrPromise(array);
+  const resource = document.querySelectorAll('.resource');
+  const mpu = document.querySelectorAll('.mpu');
+  const resourceVideos = document.querySelector('#resources-videos');
+  const resourceFrontlineAsia = document.querySelector(
+    '#resources-frontline-asia'
+  );
+
+  arrPromises.map((item) => {
+    item.addEventListener('click', async (e) => {
+      if (e.target.id === 'btnVideoCategory') {
+        const rsc = await arrPromise(resource);
+        for (const r of rsc) {
+          r.className = 'd-none';
+        }
+        resourceVideos.classList.add('d-none');
+        resourceVideos.classList.add('d-block');
+        if (!e.target.classList.contains('btn-active')) {
+          for (const cat of arrPromises) {
+            cat.classList.remove('btn-active');
+          }
+          e.target.classList.add('btn-active');
+          categoryItems.classList.toggle('d-block');
+        } else {
+          categoryItems.classList.toggle('d-block');
+        }
+      }
+      if (e.target.id === 'btnFrontlineAsiaCategory') {
+        const rsc = await arrPromise(resource);
+        for (r of rsc) {
+          r.className = 'd-none';
+        }
+        resourceFrontlineAsia.classList.add('d-none');
+        resourceFrontlineAsia.classList.add('d-block');
+        if (!e.target.classList.contains('btn-active')) {
+          for (const cat of arrPromises) {
+            cat.classList.remove('btn-active');
+          }
+          e.target.classList.add('btn-active');
+          categoryItems.classList.toggle('d-block');
+        } else {
+          categoryItems.classList.toggle('d-block');
+        }
+      }
+      if (e.target.name === 'mpu2020') {
+        const mp = await arrPromise(mpu);
+        for (m of mp) {
+          m.className = 'd-none';
+        }
+        document.querySelector(`#${e.target.name}`).classList.toggle('d-none');
+        document.querySelector(`#${e.target.name}`).classList.toggle('d-block');
+        if (!e.target.classList.contains('btn-active')) {
+          for (const cat of arrPromises) {
+            cat.classList.remove('btn-active');
+          }
+          e.target.classList.add('btn-active');
+          categoryItems.classList.toggle('d-block');
+        } else {
+          categoryItems.classList.toggle('d-block');
+        }
+      }
+      if (e.target.name === 'mpu2019') {
+        const mp = await arrPromise(mpu);
+        for (m of mp) {
+          m.className = 'd-none';
+        }
+        document.querySelector(`#${e.target.name}`).classList.toggle('d-none');
+        document.querySelector(`#${e.target.name}`).classList.toggle('d-block');
+        if (!e.target.classList.contains('btn-active')) {
+          for (const cat of arrPromises) {
+            cat.classList.remove('btn-active');
+          }
+          e.target.classList.add('btn-active');
+          categoryItems.classList.toggle('d-block');
+        } else {
+          categoryItems.classList.toggle('d-block');
+        }
+      }
+      if (e.target.name === 'mpu2018') {
+        const mp = await arrPromise(mpu);
+        for (m of mp) {
+          m.className = 'd-none';
+        }
+        document.querySelector(`#${e.target.name}`).classList.toggle('d-none');
+        document.querySelector(`#${e.target.name}`).classList.toggle('d-block');
+        if (!e.target.classList.contains('btn-active')) {
+          for (const cat of arrPromises) {
+            cat.classList.remove('btn-active');
+          }
+          e.target.classList.add('btn-active');
+          categoryItems.classList.toggle('d-block');
+        } else {
+          categoryItems.classList.toggle('d-block');
+        }
+      }
+      if (e.target.name === 'mpu2017') {
+        const mp = await arrPromise(mpu);
+        for (m of mp) {
+          m.className = 'd-none';
+        }
+        document.querySelector(`#${e.target.name}`).classList.toggle('d-none');
+        document.querySelector(`#${e.target.name}`).classList.toggle('d-block');
+        if (!e.target.classList.contains('btn-active')) {
+          for (const cat of arrPromises) {
+            cat.classList.remove('btn-active');
+          }
+          e.target.classList.add('btn-active');
+          categoryItems.classList.toggle('d-block');
+        } else {
+          categoryItems.classList.toggle('d-block');
+        }
+      }
+      if (e.target.name === 'mpu2016') {
+        const mp = await arrPromise(mpu);
+        for (m of mp) {
+          m.className = 'd-none';
+        }
+        document.querySelector(`#${e.target.name}`).classList.toggle('d-none');
+        document.querySelector(`#${e.target.name}`).classList.toggle('d-block');
+        if (!e.target.classList.contains('btn-active')) {
+          for (const cat of arrPromises) {
+            cat.classList.remove('btn-active');
+          }
+          e.target.classList.add('btn-active');
+          categoryItems.classList.toggle('d-block');
+        } else {
+          categoryItems.classList.toggle('d-block');
+        }
+      }
+    });
+  });
+}
+
+toggleCategories(categories);

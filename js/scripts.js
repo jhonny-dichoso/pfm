@@ -78,8 +78,20 @@ async function toggleCategories(array) {
           }
           e.target.classList.add('btn-active');
           categoryItems.classList.toggle('d-block');
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-down'
+          );
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-right'
+          );
         } else {
           categoryItems.classList.toggle('d-block');
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-down'
+          );
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-right'
+          );
         }
       }
       if (e.target.id === 'btnFrontlineAsiaCategory') {
@@ -95,8 +107,20 @@ async function toggleCategories(array) {
           }
           e.target.classList.add('btn-active');
           categoryItems.classList.toggle('d-block');
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-down'
+          );
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-right'
+          );
         } else {
           categoryItems.classList.toggle('d-block');
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-down'
+          );
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-right'
+          );
         }
       }
       if (e.target.name === 'mpu2020') {
@@ -112,8 +136,20 @@ async function toggleCategories(array) {
           }
           e.target.classList.add('btn-active');
           categoryItems.classList.toggle('d-block');
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-down'
+          );
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-right'
+          );
         } else {
           categoryItems.classList.toggle('d-block');
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-down'
+          );
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-right'
+          );
         }
       }
       if (e.target.name === 'mpu2019') {
@@ -129,8 +165,20 @@ async function toggleCategories(array) {
           }
           e.target.classList.add('btn-active');
           categoryItems.classList.toggle('d-block');
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-down'
+          );
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-right'
+          );
         } else {
           categoryItems.classList.toggle('d-block');
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-down'
+          );
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-right'
+          );
         }
       }
       if (e.target.name === 'mpu2018') {
@@ -146,8 +194,20 @@ async function toggleCategories(array) {
           }
           e.target.classList.add('btn-active');
           categoryItems.classList.toggle('d-block');
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-down'
+          );
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-right'
+          );
         } else {
           categoryItems.classList.toggle('d-block');
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-down'
+          );
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-right'
+          );
         }
       }
       if (e.target.name === 'mpu2017') {
@@ -163,8 +223,20 @@ async function toggleCategories(array) {
           }
           e.target.classList.add('btn-active');
           categoryItems.classList.toggle('d-block');
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-down'
+          );
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-right'
+          );
         } else {
           categoryItems.classList.toggle('d-block');
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-down'
+          );
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-right'
+          );
         }
       }
       if (e.target.name === 'mpu2016') {
@@ -180,8 +252,20 @@ async function toggleCategories(array) {
           }
           e.target.classList.add('btn-active');
           categoryItems.classList.toggle('d-block');
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-down'
+          );
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-right'
+          );
         } else {
           categoryItems.classList.toggle('d-block');
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-down'
+          );
+          btnCategoryDropdown.firstElementChild.firstElementChild.classList.toggle(
+            'fa-chevron-right'
+          );
         }
       }
     });

@@ -1519,13 +1519,17 @@ form input[type='submit'] {
   color: #eea813;
 }
 
-.resource:not(#resources-videos) {
+.tab {
+  display: none;
+}
+
+/* .tab:not(#tab-1-content) {
   display: none;
 }
 
 .mpu:not(#mpu2020) {
   display: none;
-}
+} */
 
 /* ===================================================================
     * 6.0 :: Footer

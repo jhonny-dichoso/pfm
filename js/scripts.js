@@ -3,12 +3,17 @@ const listMinistries = document.querySelector('.listMinistries');
 const btnBurger = document.querySelector('.btnBurger');
 const nav = document.querySelector('nav');
 
-btnDropdown.addEventListener('click', () => {
+btnDropdown.addEventListener('click', (e) => {
+  e.stopPropagation();
   if (!listMinistries.classList.contains('dropdown')) {
     listMinistries.classList.add('dropdown');
   } else {
     listMinistries.classList.remove('dropdown');
   }
+});
+
+window.addEventListener('click', () => {
+  listMinistries.classList.remove('dropdown');
 });
 
 btnBurger.addEventListener('click', () => {

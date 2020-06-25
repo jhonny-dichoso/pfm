@@ -1523,6 +1523,11 @@ form input[type='submit'] {
   display: none;
 }
 
+#page-not-found img {
+  width: 400px;
+  height: 400px;
+}
+
 /* .tab:not(#tab-1-content) {
   display: none;
 }
@@ -1642,6 +1647,19 @@ article:after {
   }
 
   #thank-you a {
+    display: block;
+    text-align: center;
+  }
+
+  #page-not-found {
+    text-align: center;
+  }
+
+  #page-not-found img {
+    margin-top: 40px;
+  }
+
+  #page-not-found a {
     display: block;
     text-align: center;
   }

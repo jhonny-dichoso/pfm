@@ -1180,7 +1180,7 @@ header nav ul li {
 }
 
 header nav ul li a {
-  height: 10vh;
+  /* height: 10vh; */
   line-height: 10vh;
   font-size: 0.87rem;
   text-transform: uppercase;
@@ -1501,22 +1501,24 @@ form input[type='submit'] {
 }
 
 .listMinistries li {
-  padding: 20px 0;
+  /* padding: 20px 0; */
   cursor: pointer;
 }
 
-.listMinistries li a {
-  line-height: 20px;
-  height: 20px;
-  transition: all 0.2s ease-in-out;
+.listMinistries a {
+  width: 100%;
+  line-height: 7vh;
 }
 
-.listMinistries li:hover {
-  border-bottom: 3px solid #eea813;
+.listMinistries a {
+  line-height: 7vh;
+  transition: color 0.2s ease-in-out;
+  display: block;
 }
 
-.listMinistries li:hover a {
+.listMinistries a:hover {
   color: #eea813;
+  border-bottom: 3px solid #eea813;
 }
 
 .tab {

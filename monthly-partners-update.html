@@ -10,6 +10,26 @@
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <style>
+      @media only screen and (max-width: 768px) {
+        .giving-opportunities img {
+          width: 236.25px !important;
+        }
+      }
+
+      @media only screen and (max-width: 414px) {
+        .check-giving {
+          flex-direction: column;
+        }
+
+        .check-giving__single {
+          width: 90%;
+          border-right: unset !important;
+          border-bottom: 4px solid #f1c467;
+          margin: 20px auto !important;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -558,7 +578,7 @@
             <div class="row" style="text-align: center; color: #fff">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-30">
                 <div
-                  class=""
+                  class="giving-opportunities"
                   style="background-color: #8a0000; border-radius: 10px"
                 >
                   <div
@@ -609,7 +629,7 @@
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 mb-30">
                 <div
-                  class=""
+                  class="giving-opportunities"
                   style="background-color: #5797cb; border-radius: 10px"
                 >
                   <div
@@ -659,7 +679,7 @@
             <div class="row" style="text-align: center; color: #fff">
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div
-                  class="mb-30"
+                  class="giving-opportunities mb-30"
                   style="background-color: #0e6201; border-radius: 10px"
                 >
                   <div
@@ -712,7 +732,7 @@
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
                 <div
-                  class="mb-30"
+                  class="giving-opportunities mb-30"
                   style="background-color: #f1c467; border-radius: 10px"
                 >
                   <div
@@ -783,59 +803,67 @@
               </div>
             </div>
             <div class="row">
-              <div
-                class="col-lg-4 col-md-4 col-sm-4 col-xs-12"
-                style="
-                  border-right: 4px solid #f1c467;
-                  margin: 20px 0;
-                  min-height: 450px;
-                  text-align: left;
-                "
-              >
-                <p class="bold mb-20">USA Donors:</p>
-                <p class="mb-20">
-                  Makes checks payable to:
-                  <span class="bold">Philippine Frontline Ministries</span>
-                </p>
-                <p class="mb-20">PO BOX 208 Sandwich IL 60548</p>
-              </div>
-              <div
-                class="col-lg-4 col-md-4 col-sm-4 col-xs-12"
-                style="
-                  border-right: 4px solid #f1c467;
-                  margin: 20px 0;
-                  min-height: 450px;
-                  text-align: left;
-                "
-              >
-                <p class="bold mb-20">Canada Donors:</p>
-                <p class="mb-20">
-                  Makes checks payable to:
-                  <span class="bold"
-                    >World Focus, Inc. (Please note "Philippine
-                    Frontline")</span
-                  >
-                </p>
-                <p class="mb-20">
-                  1399 Buffalo Place Winnipeg, Manitoba Canada, R3T 1L6
-                </p>
-              </div>
-
-              <div
-                class="col-lg-4 col-md-4 col-sm-4 col-xs-12"
-                style="margin: 20px 0; min-height: 450px; text-align: left"
-              >
-                <p class="bold mb-20">Philippine Donors:</p>
-                <p class="mb-20">
-                  Direct Deposit to
-                  <span class="bold"
-                    >Philippine Frontline Ministries, Inc.</span
-                  >
-                </p>
-                <p class="mb-20">
-                  Bank: China Bank Acct#: 12845200002521 Branch 1284 SM City San
-                  Pablo, Laguna SWIFT Code: CHBKPHMM
-                </p>
+              <div class="d-flex check-giving">
+                <div
+                  class="
+                    col-lg-4 col-md-4 col-sm-4 col-xs-4
+                    check-giving__single
+                  "
+                  style="
+                    border-right: 4px solid #f1c467;
+                    margin: 20px 0;
+                    text-align: left;
+                  "
+                >
+                  <p class="bold mb-20">USA Donors:</p>
+                  <p class="mb-20">
+                    Makes checks payable to:
+                    <span class="bold">Philippine Frontline Ministries</span>
+                  </p>
+                  <p class="mb-20">PO BOX 208 Sandwich IL 60548</p>
+                </div>
+                <div
+                  class="
+                    col-lg-4 col-md-4 col-sm-4 col-xs-4
+                    check-giving__single
+                  "
+                  style="
+                    border-right: 4px solid #f1c467;
+                    margin: 20px 0;
+                    text-align: left;
+                  "
+                >
+                  <p class="bold mb-20">Canada Donors:</p>
+                  <p class="mb-20">
+                    Makes checks payable to:
+                    <span class="bold"
+                      >World Focus, Inc. (Please note "Philippine
+                      Frontline")</span
+                    >
+                  </p>
+                  <p class="mb-20">
+                    1399 Buffalo Place Winnipeg, Manitoba Canada, R3T 1L6
+                  </p>
+                </div>
+                <div
+                  class="
+                    col-lg-4 col-md-4 col-sm-4 col-xs-4
+                    check-giving__single
+                  "
+                  style="margin: 20px 0; text-align: left"
+                >
+                  <p class="bold mb-20">Philippine Donors:</p>
+                  <p class="mb-20">
+                    Direct Deposit to
+                    <span class="bold"
+                      >Philippine Frontline Ministries, Inc.</span
+                    >
+                  </p>
+                  <p class="mb-20">
+                    Bank: China Bank Acct#: 12845200002521 Branch 1284 SM City
+                    San Pablo, Laguna SWIFT Code: CHBKPHMM
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -846,14 +874,14 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 background-position: center;
-                min-height: 1298px;
+
                 padding: 40px 30px;
               "
             >
               <div
                 style="
                   background-color: rgba(0, 0, 0, 0.5);
-                  height: 1298px;
+                  padding-bottom: 20px;
                   border-radius: 25px;
                 "
               >
@@ -909,7 +937,7 @@
                     <span class="d-block bold">Jeff Pessina</span>
                     <span class="d-block">Founder/President</span>
                     <a
-                      style="color: #6a1040"
+                      style="color: #6a1040; word-break: break-all"
                       href="mailto:jeff.pessina@thefrontline.asia"
                       >jeff.pessina@thefrontline.asia</a
                     >
@@ -927,7 +955,7 @@
                       >Director of Compassion Ministries</span
                     >
                     <a
-                      style="color: #3998d1"
+                      style="color: #3998d1; word-break: break-all"
                       href="mailto:mike.gordon@thefrontline.asia"
                       >mike.gordon@thefrontline.asia</a
                     >
@@ -943,7 +971,7 @@
                     <span class="d-block bold">Max Beloso</span>
                     <span class="d-block">Director of Church-Planting</span>
                     <a
-                      style="color: #8a1a1b"
+                      style="color: #8a1a1b; word-break: break-all"
                       href="mailto:max.beloso@thefrontline.asia"
                       >max.beloso@thefrontline.asia</a
                     >
@@ -959,7 +987,7 @@
                     <span class="d-block bold">Rhoda Lynn Pessina-Dayo</span>
                     <span class="d-block">Director of Education</span>
                     <a
-                      style="color: #166233"
+                      style="color: #166233; word-break: break-all"
                       href="mailto:rhoda.pessina@frontlineacademy.asia"
                       >rhoda.pessina@frontlineacademy.asia</a
                     >
@@ -969,131 +997,6 @@
             </div>
           </div>
         </div>
-
-        <!-- <div class="row">
-          <div class="col-lg-12">
-            <img
-              class="mb-30"
-              style="width: 100%; display: block"
-              src="https://www.thefrontline.asia/wp-content/uploads/2021/07/director-mess-q2.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <img
-              style="width: 100%; display: block"
-              src="https://www.thefrontline.asia/wp-content/uploads/2021/07/giving-opportunities-Q2.png"
-              alt=""
-            />
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
-            <img
-              style="width: 100%; display: block"
-              src="https://www.thefrontline.asia/wp-content/uploads/2021/07/support-or-contact-Q2.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-12 mt-30 mb-30 text-center">
-            <div
-              class="col-lg-3"
-              style="
-                background-color: #f0f1f1;
-                padding: 10px;
-                min-height: 68px;
-                display: flex;
-                justify-content: flex-start;
-                flex-direction: column;
-                font-size: 12px;
-              "
-            >
-              <p style="line-height: 1">Jeff Pessina</p>
-              <p style="line-height: 1">Founder/President</p>
-              <a
-                style="color: #6a1040; word-break: break-all; line-height: 1"
-                href="mailto:jeff.pessina@thefrontline.asia"
-                >jeff.pessina@thefrontline.asia</a
-              >
-            </div>
-            <div
-              class="col-lg-3"
-              style="
-                background-color: #f0f1f1;
-                padding: 10px;
-                min-height: 68px;
-                display: flex;
-                justify-content: flex-start;
-                flex-direction: column;
-                font-size: 12px;
-              "
-            >
-              <p style="line-height: 1">Mike Gordon</p>
-              <p style="line-height: 1">Director of Compassion Ministries</p>
-              <a
-                style="color: #3998d1; word-break: break-all; line-height: 1"
-                href="mailto:mike.gordon@thefrontline.asia"
-                >mike.gordon@thefrontline.asia</a
-              >
-            </div>
-            <div
-              class="col-lg-3"
-              style="
-                background-color: #f0f1f1;
-                padding: 10px;
-                min-height: 68px;
-                display: flex;
-                justify-content: flex-start;
-                flex-direction: column;
-                font-size: 12px;
-              "
-            >
-              <p style="line-height: 1">Max Beloso</p>
-              <p style="line-height: 1">Director of Church-Planting</p>
-              <a
-                style="color: #8a1a1b; word-break: break-all; line-height: 1"
-                href="mailto:max.beloso@thefrontline.asia"
-                >max.beloso@thefrontline.asia</a
-              >
-            </div>
-            <div
-              class="col-lg-3"
-              style="
-                background-color: #f0f1f1;
-                padding: 10px;
-                min-height: 68px;
-                display: flex;
-                justify-content: flex-start;
-                flex-direction: column;
-                font-size: 12px;
-              "
-            >
-              <p style="line-height: 1">Rhoda Lynn Pessina-Dayo</p>
-              <p style="line-height: 1">Director of Education</p>
-              <a
-                style="color: #166233; word-break: break-all; line-height: 1"
-                href="mailto:rhoda.pessina@frontlineacademy.asia"
-                >rhoda.pessina@frontlineacademy.asia</a
-              >
-            </div>
-          </div>
-          <div class="col-lg-12">
-            <div class="text-center">
-              <a
-                href="https://www.thefrontline.asia/"
-                style="display: inline-block; width: 25%"
-              >
-                <img
-                  style="width: 100%"
-                  src="https://www.thefrontline.asia/wp-content/uploads/2021/07/website-link.png"
-                  alt=""
-                />
-              </a>
-            </div>
-          </div>
-        </div> -->
       </div>
     </div>
     <section id="newsletter" class="background-banner bg-newsletter py-80">

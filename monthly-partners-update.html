@@ -15,6 +15,30 @@
         .giving-opportunities img {
           width: 236.25px !important;
         }
+
+        .director--title {
+          font-size: 28px !important;
+          margin-left: unset !important;
+          text-align: center !important;
+        }
+
+        .director--image {
+          float: unset !important;
+          margin-left: unset !important;
+          margin-right: unset !important;
+          margin: 10px auto !important;
+          margin-top: unset !important;
+        }
+
+        .giving-opportunities--title {
+          font-size: 28px !important;
+          line-height: 28px !important;
+        }
+
+        .check-giving--title {
+          font-size: 28px !important;
+          line-height: 28px !important;
+        }
       }
 
       @media only screen and (max-width: 414px) {
@@ -103,7 +127,7 @@
         <h1 class="text-white thin">Monthly Partners Update</h1>
       </div>
     </section>
-    <div class="container">
+    <div class="container-mpu">
       <div class="py-40 t-justify">
         <div class="row">
           <div class="col-lg-12">
@@ -197,7 +221,7 @@
         <div class="row">
           <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
             <img
-              class="pd-20"
+              class="mb-30"
               style="width: 100%; display: block"
               src="https://www.thefrontline.asia/wp-content/uploads/2021/03/compassionheader.png"
               alt=""
@@ -489,6 +513,7 @@
           <div class="col-lg-12">
             <div class="mb-30">
               <p
+                class="director--title"
                 style="
                   text-transform: uppercase;
                   margin-left: 160px;
@@ -510,18 +535,21 @@
                   position: relative;
                 "
               >
-                <img
-                  style="
-                    float: left;
-                    width: 160px;
-                    height: 160px;
-                    margin-left: -60px;
-                    margin-top: -80px;
-                    margin-right: 10px;
-                  "
-                  src="https://www.thefrontline.asia/wp-content/uploads/2021/03/founder.png"
-                  alt=""
-                />
+                <div class="text-center">
+                  <img
+                    class="director--image"
+                    style="
+                      float: left;
+                      width: 160px;
+                      height: 160px;
+                      margin-left: -60px;
+                      margin-top: -80px;
+                      margin-right: 10px;
+                    "
+                    src="https://www.thefrontline.asia/wp-content/uploads/2021/03/founder.png"
+                    alt=""
+                  />
+                </div>
                 <p class="mb-30">
                   Many years ago I met another missionary who asked about our
                   mission. When I explained the team nature of Frontline, he
@@ -560,6 +588,7 @@
             <div class="row">
               <div class="col-lg-12">
                 <p
+                  class="giving-opportunities--title"
                   style="
                     text-transform: uppercase;
                     font-weight: bold;
@@ -586,22 +615,26 @@
                     style="
                       width: 90%;
                       margin: 0 auto;
-                      padding: 10px 0;
+                      padding: 10px 0 20px 0;
                       position: relative;
-                      min-height: 260px;
+                      min-height: 270px;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: space-between;
                     "
                   >
                     <div>
                       <img
-                        class="mb-10"
                         style="width: 100%"
                         src="https://www.thefrontline.asia/wp-content/uploads/2021/07/church-planting.jpg"
                         alt=""
                       />
                     </div>
-                    <div class="mb-10">
+                    <div>
                       <p style="line-height: 1.6">
-                        <span class="bold" style="display: block"
+                        <span
+                          class="bold"
+                          style="display: block; font-size: 18px"
                           >Adopt-A-Church;</span
                         ><span class="d-block"> Fuel Church-Planting</span>
                         <span class="d-block">$100 monthly per site</span>
@@ -609,7 +642,7 @@
                       </p>
                     </div>
                     <a
-                      href="#"
+                      href="https://frontlineworshipcenter.org/donate-form/"
                       style="
                         background-color: #fff;
                         color: #8a0000;
@@ -618,9 +651,6 @@
                         display: block;
                         padding: 5px;
                         border-radius: 5px;
-                        position: absolute;
-                        width: 100%;
-                        bottom: 20px;
                       "
                       >donate</a
                     >
@@ -637,27 +667,35 @@
                     style="
                       width: 90%;
                       margin: 0 auto;
-                      padding: 10px 0;
+                      padding: 10px 0 20px 0;
                       position: relative;
-                      min-height: 260px;
+                      min-height: 270px;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: space-between;
                     "
                   >
                     <div>
                       <img
-                        class="mb-10"
                         style="width: 100%"
                         src="https://www.thefrontline.asia/wp-content/uploads/2021/07/compassion.jpg"
                         alt=""
                       />
                     </div>
-                    <div class="mb-10">
-                      <p style="line-height: 1.6; font-size: 22px">
+                    <div>
+                      <p
+                        style="
+                          line-height: 1.6;
+                          font-size: 18px;
+                          font-weight: bold;
+                        "
+                      >
                         <span class="d-block">Sponsor A Child</span>
                         <span class="d-block">in Need</span>
                       </p>
                     </div>
                     <a
-                      href="#"
+                      href="https://www.facethechildren.org/sponsor-a-child.html"
                       style="
                         background-color: #fff;
                         color: #5797cb;
@@ -666,9 +704,6 @@
                         display: block;
                         padding: 5px;
                         border-radius: 5px;
-                        position: absolute;
-                        width: 100%;
-                        bottom: 20px;
                       "
                       >donate</a
                     >
@@ -687,22 +722,26 @@
                     style="
                       width: 90%;
                       margin: 0 auto;
-                      padding: 10px 0;
+                      padding: 10px 0 20px 0;
                       position: relative;
-                      min-height: 260px;
+                      min-height: 270px;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: space-between;
                     "
                   >
                     <div>
                       <img
-                        class="mb-10"
                         style="width: 100%"
                         src="https://www.thefrontline.asia/wp-content/uploads/2021/07/education.jpg"
                         alt=""
                       />
                     </div>
-                    <div class="mb-10">
+                    <div>
                       <p style="line-height: 1.6">
-                        <span class="bold" style="display: block"
+                        <span
+                          class="bold"
+                          style="display: block; font-size: 18px"
                           >Adopt-A-Class;</span
                         ><span class="d-block"
                           >Support students and teachers</span
@@ -712,7 +751,7 @@
                       </p>
                     </div>
                     <a
-                      href="#"
+                      href="https://frontlineacademy.asia/donate"
                       style="
                         background-color: #fff;
                         color: #0e6201;
@@ -721,9 +760,6 @@
                         display: block;
                         padding: 5px;
                         border-radius: 5px;
-                        position: absolute;
-                        width: 100%;
-                        bottom: 20px;
                       "
                       >donate</a
                     >
@@ -740,27 +776,29 @@
                     style="
                       width: 90%;
                       margin: 0 auto;
-                      padding: 10px 0;
+                      padding: 10px 0 20px 0;
                       position: relative;
-                      min-height: 260px;
+                      min-height: 270px;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: space-between;
                     "
                   >
                     <div>
                       <img
-                        class="mb-10"
                         style="width: 100%"
                         src="https://www.thefrontline.asia/wp-content/uploads/2021/07/general-giving.jpg"
                         alt=""
                       />
                     </div>
-                    <div class="mb-10">
-                      <p style="line-height: 1.6; font-size: 22px">
+                    <div>
+                      <p style="line-height: 1.6; font-size: 18px">
                         <span class="d-block">Give where most</span>
                         <span class="d-block">needed</span>
                       </p>
                     </div>
                     <a
-                      href="#"
+                      href="https://www.thefrontline.asia/donate/"
                       style="
                         background-color: #fff;
                         color: #f1c467;
@@ -769,9 +807,6 @@
                         display: block;
                         padding: 5px;
                         border-radius: 5px;
-                        position: absolute;
-                        width: 100%;
-                        bottom: 20px;
                       "
                       >donate</a
                     >
@@ -789,6 +824,7 @@
                   "
                 >
                   <p
+                    class="check-giving--title"
                     style="
                       color: #fff;
                       padding: 20px;
@@ -808,11 +844,13 @@
                   class="
                     col-lg-4 col-md-4 col-sm-4 col-xs-4
                     check-giving__single
+                    thin
                   "
                   style="
                     border-right: 4px solid #f1c467;
                     margin: 20px 0;
                     text-align: left;
+                    line-height: 20px !important;
                   "
                 >
                   <p class="bold mb-20">USA Donors:</p>
@@ -820,12 +858,14 @@
                     Makes checks payable to:
                     <span class="bold">Philippine Frontline Ministries</span>
                   </p>
-                  <p class="mb-20">PO BOX 208 Sandwich IL 60548</p>
+                  <p>PO BOX 208 Sandwich IL</p>
+                  <p class="mb-20">60548</p>
                 </div>
                 <div
                   class="
                     col-lg-4 col-md-4 col-sm-4 col-xs-4
                     check-giving__single
+                    thin
                   "
                   style="
                     border-right: 4px solid #f1c467;
@@ -841,14 +881,15 @@
                       Frontline")</span
                     >
                   </p>
-                  <p class="mb-20">
-                    1399 Buffalo Place Winnipeg, Manitoba Canada, R3T 1L6
-                  </p>
+                  <p>1399 Buffalo Place</p>
+                  <p>Winnipeg, Manitoba</p>
+                  <p class="mb-20">Canada, R3T 1L6</p>
                 </div>
                 <div
                   class="
                     col-lg-4 col-md-4 col-sm-4 col-xs-4
                     check-giving__single
+                    thin
                   "
                   style="margin: 20px 0; text-align: left"
                 >
@@ -859,10 +900,11 @@
                       >Philippine Frontline Ministries, Inc.</span
                     >
                   </p>
-                  <p class="mb-20">
-                    Bank: China Bank Acct#: 12845200002521 Branch 1284 SM City
-                    San Pablo, Laguna SWIFT Code: CHBKPHMM
-                  </p>
+                  <p>Bank: China Bank</p>
+                  <p>Acct#: 12845200002521</p>
+                  <p>Branch: 1284 SM City San</p>
+                  <p>Pablo, Laguna</p>
+                  <p class="mb-20">SWIFT CODE: CHBKPHMM</p>
                 </div>
               </div>
             </div>
@@ -883,6 +925,7 @@
                   background-color: rgba(0, 0, 0, 0.5);
                   padding-bottom: 20px;
                   border-radius: 25px;
+                  text-align: center;
                 "
               >
                 <img
@@ -909,7 +952,7 @@
                       border-radius: 10px;
                     "
                     class="d-block mb-10"
-                    href="#"
+                    href="https://www.thefrontline.asia/"
                     >www.thefrontline.asia</a
                   >
                   <a
@@ -920,7 +963,7 @@
                       border-radius: 10px;
                     "
                     class="d-block mb-10"
-                    href="#"
+                    href="mailto:info@thefrontline.asia"
                     >info@thefrontline.asia</a
                   >
                   <p style="color: #fff">+ 1 815 498 3676</p>
